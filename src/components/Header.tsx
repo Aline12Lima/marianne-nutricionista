@@ -10,7 +10,7 @@ const Header = () => {
     { label: "Sobre Mim", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
     { label: "Blog", href: "#blog" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Projetos", href: "#projetos" },
     { label: "Depoimentos", href: "#depoimentos" },
     { label: "Contato", href: "#contato" },
   ];
@@ -19,8 +19,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="#inicio" className="text-2xl font-bold text-primary">
-            Nutrição & Bem-Estar
+          <a
+            href="#inicio"
+            className="text-4xl font-bold text-muted-foreground"
+          >
+            Marianne Nutricionista
           </a>
 
           {/* Desktop Navigation */}
@@ -35,7 +38,11 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" asChild>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Agendar Consulta
               </a>
             </Button>
@@ -64,7 +71,11 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" asChild className="w-full">
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Agendar Consulta
               </a>
             </Button>

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import aboutImage from "@/assets/nutritionist-about.jpg";
+import aboutImage from "@/assets/sobreMary.jpg";
 import { GraduationCap, Award, Heart } from "lucide-react";
 
 const AboutSection = () => {
@@ -15,19 +15,15 @@ const AboutSection = () => {
             />
           </div>
           <div className="animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Sobre Mim
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Sou nutricionista especializada em nutrição comportamental e transtornos alimentares, 
-              com mais de 10 anos de experiência ajudando pessoas a transformarem sua relação com a comida.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre Mim</h2>
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Acredito que a nutrição vai muito além de contar calorias. Meu trabalho é ajudar você 
-              a entender seus padrões alimentares, respeitar os sinais do seu corpo e fazer as pazes 
-              com a comida de forma leve e sustentável.
+              Acredito que a nutrição vai muito além de contar calorias. Meu
+              trabalho é ajudar você a entender seus padrões alimentares,
+              respeitar os sinais do seu corpo e fazer as pazes com a comida de
+              forma leve e sustentável.
             </p>
-            
+
             <div className="space-y-4">
               <Card className="p-4 bg-card hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-3">
@@ -38,7 +34,8 @@ const AboutSection = () => {
                       Nutrição - Universidade Federal de São Paulo (UNIFESP)
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Pós-graduação em Nutrição Comportamental - Instituto de Nutrição Comportamental
+                      Pós-graduação em Nutrição Comportamental - Instituto de
+                      Nutrição Comportamental
                     </p>
                   </div>
                 </div>
@@ -48,7 +45,9 @@ const AboutSection = () => {
                 <div className="flex items-start gap-3">
                   <Award className="text-primary mt-1" size={24} />
                   <div>
-                    <h3 className="font-semibold mb-1">Registro Profissional</h3>
+                    <h3 className="font-semibold mb-1">
+                      Registro Profissional
+                    </h3>
                     <p className="text-sm text-muted-foreground">
                       CRN-3: 12345/P
                     </p>
@@ -62,7 +61,8 @@ const AboutSection = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Especialização</h3>
                     <p className="text-sm text-muted-foreground">
-                      Nutrição Comportamental, Transtornos Alimentares, Mindful Eating
+                      Nutrição Comportamental, Transtornos Alimentares,
+                      Alimentação escolar e Saúde da Criança.
                     </p>
                   </div>
                 </div>

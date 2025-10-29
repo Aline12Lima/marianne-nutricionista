@@ -1,20 +1,33 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/nutritionist-hero.jpg";
+import heroImage from "@/assets/mary.nutri.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="min-h-screen flex items-center pt-20 bg-gradient-to-br from-[hsl(var(--hero-bg))] to-background">
+    <section
+      id="inicio"
+      className="min-h-screen flex items-center pt-20 bg-gradient-to-br from-[hsl(var(--hero-bg))] to-background"
+    >
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
           <div className="animate-slide-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Faça as pazes com a comida e com o seu corpo
+            <h1 className="text-2xl md:text-2xl lg:text-5xl font-bold mb-6 leading-tight">
+              A jornada para se tornar
+              <br /> a melhor versão de si mesmo começa aqui!
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Através da nutrição comportamental, ajudo você a construir uma relação saudável e equilibrada com a alimentação, sem dietas restritivas ou culpa.
+              Bem-vindo(a) ao meu Site um espaço onde movimento, mentalidade e
+              nutrição equilibrada se unem. Descubra uma abordagem holística
+              para saúde e bem-estar, que combina treinamento baseado em
+              evidências, nutrição e coaching de mentalidade, tudo para te
+              ajudar a se sentir mais forte, confiante e no controle do seu dia
+              a dia.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Agende sua consulta
               </a>
             </Button>
@@ -23,7 +36,7 @@ const HeroSection = () => {
             <img
               src={heroImage}
               alt="Nutricionista profissional"
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              className="w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
         </div>
