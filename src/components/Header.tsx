@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <a
             href="#inicio"
-            className="text-4xl font-bold text-muted-foreground"
+            className="text-6xl font-passions text-muted-foreground tracking-wide"
           >
             Marianne Nutricionista
           </a>

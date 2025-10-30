@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/mary.nutri.jpg";
+import heroImage from "@/assets/Gemini_Generated_Image_gwi140gwi140gwi1.png";
 
 const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center pt-20 bg-gradient-to-br from-[hsl(var(--hero-bg))] to-background"
+      className="min-h-screen flex justify-center items-start pt-16 bg-gradient-to-br from-[hsl(var(--hero-bg))] to-background"
     >
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
-          <div className="animate-slide-up">
-            <h1 className="text-2xl md:text-2xl lg:text-5xl font-bold mb-6 leading-tight">
+          <div className="mt-8 md:mt-0 animate-fade-in">
+            <h1 className="text-2xl md:text-2xl lg:text-5xl font-bold mb-6 leading-tight ">
               A jornada para se tornar
               <br /> a melhor versão de si mesmo começa aqui!
             </h1>
@@ -32,7 +32,7 @@ const HeroSection = () => {
               </a>
             </Button>
           </div>
-          <div className="animate-fade-in">
+          <div className="animate-fade-in py-4">
             <img
               src={heroImage}
               alt="Nutricionista profissional"

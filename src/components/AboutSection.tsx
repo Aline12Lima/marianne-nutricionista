@@ -4,14 +4,14 @@ import { GraduationCap, Award, Heart } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-20 bg-[hsl(var(--section-bg))]">
+    <section id="sobre" className="py-12 bg-[hsl(var(--section-bg))]">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-fade-in">
             <img
               src={aboutImage}
               alt="Sobre a nutricionista"
-              className="w-full h-auto rounded-3xl shadow-xl"
+              className="w-3/4 md:w-4/5 lg:w-3/4 mx-auto h-auto rounded-3xl shadow-xl object-cover"
             />
           </div>
           <div className="animate-slide-up">
@@ -31,11 +31,10 @@ const AboutSection = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Formação Acadêmica</h3>
                     <p className="text-sm text-muted-foreground">
-                      Nutrição - Universidade Federal de São Paulo (UNIFESP)
+                      Nutrição - Universidade Norte do Paraná (UNOPAR)
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Pós-graduação em Nutrição Comportamental - Instituto de
-                      Nutrição Comportamental
+                      Bacharelado em Nutrição
                     </p>
                   </div>
                 </div>
@@ -61,8 +60,14 @@ const AboutSection = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Especialização</h3>
                     <p className="text-sm text-muted-foreground">
-                      Nutrição Comportamental, Transtornos Alimentares,
-                      Alimentação escolar e Saúde da Criança.
+                      Alergias e Sensibilidades Alimentares: Um Olhar Funcional
+                      Nutricional
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Nutricionista Além da Prática Clínica
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Obesidade e Cirurgia Bariátrica
                     </p>
                   </div>
                 </div>
