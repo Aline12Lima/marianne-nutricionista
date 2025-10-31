@@ -11,8 +11,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import healthyFoodImage from "@/assets/im6.jpg";
-import image2 from "@/assets/im5.jpg";
-import image3 from "@/assets/im4.jpg";
+import image2 from "@/assets/im4.jpg";
+import image3 from "@/assets/im5.jpg";
 
 const ServicesSection = () => {
   const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
@@ -22,19 +22,19 @@ const ServicesSection = () => {
       icon: <Users className="text-primary" size={32} />,
       title: "Palestras e Workshops Personalizados",
       description:
-        "Agendamentos de palestras e workshops para grupos, empresas e eventos, focados em nutrição e bem-estar.",
+        "Transformo conhecimento em saúde com palestras que inspiram mudanças reais nos hábitos alimentares.",
     },
     {
       icon: <Clock className="text-primary" size={32} />,
       title: "Consultas Online e Presenciais",
       description:
-        "Tempo dedicado para conversar, entender suas necessidades e trabalhar de forma acolhedora e sem julgamentos.",
+        "Realizo acompanhamento nutricional através de consultas online e presenciais, conforme preferencia e possibilidade do paciente.Você receberá seu plano nutricional personalizado e acessível.",
     },
     {
       icon: <Target className="text-primary" size={32} />,
-      title: "Foco em Comportamento",
+      title: "Foco em diversos objetivos Nutricional ",
       description:
-        "Não trabalhamos com dietas restritivas. O objetivo é construir uma relação saudável e sustentável com a alimentação.",
+        "Emagrecimento saudável, Nutrição comportamental, Nutrição esportiva, Saúde digestiva, Alimentação infantil e muito mais.",
     },
     {
       icon: <HeartHandshake className="text-primary" size={32} />,
@@ -87,18 +87,27 @@ const ServicesSection = () => {
               Palestras e Workshops de Nutrição
             </h3>
             <p className="text-muted-foreground mb-4 mt-8">
-              A Nutrição Comportamental considera não apenas os nutrientes, mas
-              também os hábitos, emoções, ambiente e história pessoal de cada
-              indivíduo. Ela busca promover mudanças reais e duradouras,
-              desenvolvendo autonomia alimentar e uma relação equilibrada com a
-              comida.
+              Levo educação nutricional de forma leve, prática e inspiradora,
+              ajudando pessoas, empresas e comunidades a transformarem seus
+              hábitos alimentares. Minhas palestras abordam temas como
+              alimentação saudável, energia no trabalho, nutrição comportamental
+              e bem-estar, sempre com foco em resultados reais e aplicáveis no
+              dia a dia.
             </p>
-            <p className="text-muted-foreground mb-6">
-              Por meio de palestras em escolas, empresas, comunidades e postos
-              de saúde, o objetivo é incentivar reflexões sobre escolhas
-              alimentares, emoções e bem-estar. Assim, cada pessoa aprende a
-              ouvir seu corpo, respeitar seus sinais e encontrar prazer e paz ao
-              se alimentar.
+            <p className="text-muted-foreground mb-2">
+              🎓 Escolas: educação alimentar para crianças, adolescentes e pais.
+            </p>
+
+            <p className="text-muted-foreground mb-2">
+              💪🏽 Academias: alimentação para performance, recuperação e
+              motivação.
+            </p>
+            <p className="text-muted-foreground mb-2">
+              👷🏽 Empresas : como se alimentar melhor e aumentar a produtividade.
+            </p>
+            <p className="text-muted-foreground mb-2">
+              💻 Online: palestras e workshops interativos via Meet ou Zoom, com
+              material digital incluso.
             </p>
 
             <Button variant="hero" size="lg" asChild>

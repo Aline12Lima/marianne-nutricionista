@@ -11,22 +11,29 @@ const ContactSection = () => {
             Vamos Conversar?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Entre em contato para agendar sua consulta ou tirar suas dúvidas
+            Entre em contato para agendar sua consulta, consultar preços ou
+            tirar suas dúvidas
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="p-8 bg-card hover:shadow-lg transition-shadow animate-fade-in">
-            <h3 className="text-2xl font-semibold mb-6">Informações de Contato</h3>
-            
+            <h3 className="text-2xl font-semibold mb-6">
+              Informações de Contato
+            </h3>
+
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <Phone className="text-primary mt-1 flex-shrink-0" size={24} />
                 <div>
                   <h4 className="font-medium mb-1">Telefone / WhatsApp</h4>
-                  <p className="text-muted-foreground">(11) 99999-9999</p>
+                  <p className="text-muted-foreground">(77) 999451413</p>
                   <Button variant="link" className="px-0 h-auto mt-1" asChild>
-                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://wa.me/5577999451413"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Enviar mensagem
                     </a>
                   </Button>
@@ -37,7 +44,10 @@ const ContactSection = () => {
                 <Mail className="text-primary mt-1 flex-shrink-0" size={24} />
                 <div>
                   <h4 className="font-medium mb-1">E-mail</h4>
-                  <p className="text-muted-foreground">contato@nutricionista.com.br</p>
+                  <p className="text-muted-foreground">
+                    {" "}
+                    mariannelima2000@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -46,8 +56,10 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium mb-1">Endereço</h4>
                   <p className="text-muted-foreground">
-                    Rua das Flores, 123 - Sala 45<br />
-                    Jardim Paulista, São Paulo - SP<br />
+                    Rua das Flores, 123 - Sala 45
+                    <br />
+                    Jaborandi, BA
+                    <br />
                     CEP: 01234-567
                   </p>
                 </div>
@@ -58,8 +70,9 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium mb-1">Horário de Atendimento</h4>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 8h às 18h<br />
-                    Sábado: 8h às 12h
+                    Segunda a Sexta: 8h às 18h
+                    <br />
+                  
                   </p>
                 </div>
               </div>
@@ -67,15 +80,23 @@ const ContactSection = () => {
           </Card>
 
           <Card className="p-8 bg-[hsl(var(--hero-bg))] border-primary/20 animate-fade-in">
-            <h3 className="text-2xl font-semibold mb-4">Pronto para começar?</h3>
+            <h3 className="text-2xl font-semibold mb-4">
+              Pronto para começar?
+            </h3>
             <p className="text-muted-foreground mb-6">
-              Agende sua primeira consulta e dê o primeiro passo para transformar sua relação com a alimentação.
+              Agende sua primeira consulta e dê o primeiro passo para
+              transformar sua relação com a alimentação.
             </p>
             <p className="text-muted-foreground mb-8">
-              O atendimento pode ser presencial ou online, de acordo com sua preferência e necessidade.
+              O atendimento pode ser presencial ou online, de acordo com sua
+              preferência e necessidade.
             </p>
             <Button variant="hero" size="lg" className="w-full" asChild>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Agendar Consulta pelo WhatsApp
               </a>
             </Button>
