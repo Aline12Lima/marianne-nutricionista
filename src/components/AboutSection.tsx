@@ -4,8 +4,8 @@ import { GraduationCap, Award, Heart } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-12 bg-[hsl(var(--section-bg))]">
-      <div className="container mx-auto px-4">
+    <section id="sobre" className="py-24 bg-[hsl(var(--section-bg))]">
+      <div className="container mx-auto px-4 ">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-fade-in">
             <img

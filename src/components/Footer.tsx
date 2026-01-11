@@ -1,28 +1,32 @@
-import { Instagram, Facebook, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[hsl(var(--section-bg))] border-t border-border py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-xl font-bold text-muted-foreground mb-4">
+    <footer className="bg-[#F5EBE0] border-t border-[#e0d6cd] py-8">
+      {/* 1. Adicionei 'px-8 md:px-12' para dar bastante espaço nas laterais e não colar na borda */}
+      <div className="container mx-auto px-8 md:px-12">
+        {/* 2. Adicionei 'place-items-center' para forçar o grid a centralizar os blocos */}
+        <div className="grid md:grid-cols-3 gap-8 mb-8 place-items-center text-center">
+          {/* Coluna 1: Centralizada */}
+          <div className="flex flex-col items-center">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
               Nutrição & Bem-Estar
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-gray-600">
               Marianne Lima <br /> Especialista em nutrição.
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4">Links Rápidos</h4>
+          {/* Coluna 2: Centralizada */}
+          <div className="flex flex-col items-center w-full">
+            <h4 className="font-semibold mb-4 text-gray-900">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#sobre"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 >
                   Sobre Mim
                 </a>
@@ -30,7 +34,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#servicos"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 >
                   Serviços
                 </a>
@@ -38,7 +42,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#blog"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 >
                   Blog
                 </a>
@@ -46,7 +50,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contato"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 >
                   Contato
                 </a>
@@ -54,14 +58,15 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4">Redes Sociais</h4>
-            <div className="flex gap-4 align-center">
+          {/* Coluna 3: Centralizada */}
+          <div className="flex flex-col items-center">
+            <h4 className="font-semibold mb-4 text-gray-900">Redes Sociais</h4>
+            <div className="flex gap-4 items-center justify-center">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/marianne_lima2/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={24} />
@@ -70,7 +75,7 @@ const Footer = () => {
                 href="https://wa.me/5511999999999"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-gray-600 hover:text-[#C59C95] transition-colors"
                 aria-label="WhatsApp"
               >
                 <svg
@@ -91,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t border-[#e0d6cd] pt-6 text-center text-sm text-gray-500">
           <p>
             © {currentYear} Nutrição & Bem-Estar. Todos os direitos reservados.
           </p>

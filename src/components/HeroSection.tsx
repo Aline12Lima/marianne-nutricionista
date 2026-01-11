@@ -5,24 +5,35 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex justify-center items-start pt-16 bg-gradient-to-br from-[hsl(var(--hero-bg))] to-background"
+      // FUNDO: Cor areia (#F5EBE0)
+      className="min-h-screen flex items-center py-48 md:py-32 px-4 bg-[#F5EBE0]"
     >
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto">
         <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
-          <div className="mt-8 md:mt-0 animate-fade-in">
-            <h1 className="text-2xl md:text-2xl lg:text-5xl font-bold mb-6 leading-tight ">
+          {/* Texto + botão */}
+          <div className="flex flex-col justify-center space-y-6 md:space-y-8 animate-fade-in">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
               A jornada para se tornar
               <br /> a melhor versão de si mesmo começa aqui!
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Bem-vindo(a) ao meu Site um espaço onde movimento, mentalidade e
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
+              Bem-vindo(a) ao meu Site, um espaço onde movimento, mentalidade e
               nutrição equilibrada se unem. Descubra uma abordagem holística
-              para saúde e bem-estar, que combina treinamento baseado em
-              evidências, nutrição e coaching de mentalidade, tudo para te
-              ajudar a se sentir mais forte, confiante e no controle do seu dia
-              a dia.
+              para saúde e bem-estar, combinando treinamento baseado em
+              evidências, nutrição e coaching de mentalidade.
             </p>
-            <Button variant="hero" size="lg" asChild>
+
+            {/* BOTÃO ALTERADO: 
+                1. size="sm" para ficar pequeno.
+                2. bg-[#C59C95] para um tom Rosê Areia (mais terroso).
+                3. w-fit para ajustar a largura ao texto.
+            */}
+            <Button
+              variant="default"
+              size="lg"
+              className="w-fit  rounded-full bg-[#C59C95] hover:bg-[#b08b84] text-white shadow-md"
+              asChild
+            >
               <a
                 href="https://wa.me/5511999999999"
                 target="_blank"
@@ -32,11 +43,13 @@ const HeroSection = () => {
               </a>
             </Button>
           </div>
-          <div className="animate-fade-in py-4">
+
+          {/* Imagem */}
+          <div className="flex justify-center md:justify-end animate-fade-in">
             <img
               src={heroImage}
               alt="Nutricionista profissional"
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-2xl shadow-2xl"
             />
           </div>
         </div>

@@ -9,10 +9,8 @@ const Header = () => {
     { label: "Início", href: "#inicio" },
     { label: "Sobre Mim", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
-    { label: "Blog", href: "#blog" },
-    { label: "Projetos", href: "#projetos" },
+
     { label: "Depoimentos", href: "#depoimentos" },
-    { label: "Contato", href: "#contato" },
   ];
 
   return (
@@ -37,15 +35,6 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="sm" asChild>
-              <a
-                href="https://wa.me/5511999999999"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Agendar Consulta
-              </a>
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}

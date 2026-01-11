@@ -4,42 +4,16 @@
 
 @layer base {
   :root {
-    --background: 30 45% 92%; /* f5ebe0 areia-clara */
-    --foreground: 25 20% 20%;
-
-    --card: 60 10% 92%; /* edede9 cinza */
-    --card-foreground: 25 20% 20%;
-
-    --popover: 60 10% 92%;
-    --popover-foreground: 25 20% 20%;
-
-    --primary: 24 30% 77%; /* d5bdaf rosa escuro*/
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 25 32% 84%; /* e3d5ca - areia rosa- claro */
-    --secondary-foreground: 25 20% 20%;
-
-    --muted: 30 20% 78%; /* d6ccc2 areia-cinza-rosa-claro */
-    --muted-foreground: 25 15% 35%;
-
-    --accent: 25 32% 84%; /* mesmo tom da secundária */
-    --accent-foreground: 25 20% 20%;
-
-    --destructive: 0 70% 45%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 30 20% 80%;
-    --input: 30 20% 85%;
-    --ring: 24 30% 77%;
-
-    --radius: 1rem;
-
-    /* Custom tokens */
-    --hero-bg: 30 45% 92%; /* fundo principal */
-    --section-bg: 25 32% 84%;
-    --soft-beige: 24 30% 77%;
-    --warm-neutral: 30 20% 78%;
-  }
+    :root {
+        --primary: 24 30% 77%;
+        /* rosa escuro */
+        --secondary: 25 32% 84%;
+        /* areia clara */
+        --background: 30 45% 92%;
+        /* fundo */
+        --foreground: 25 20% 20%;
+        /* texto */
+      }
 
   .dark {
     --background: 30 15% 15%;
@@ -105,4 +79,5 @@
   h6 {
     @apply font-semibold;
   }
+}
 }

@@ -26,7 +26,8 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-[hsl(var(--section-bg))]">
+    // 1. Fundo da seção Branco
+    <section id="depoimentos" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Depoimentos</h2>
@@ -40,23 +41,22 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="p-6 bg-card hover:shadow-lg transition-all duration-300 animate-fade-in"
+              // 2. Cards Rose (#C59C95) e Redondos (rounded-2xl)
+              className="p-6 bg-[#C59C95] rounded-2xl border-none hover:shadow-lg transition-all duration-300 animate-fade-in"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="fill-primary text-primary"
+                    // 3. Estrelas Brancas para destacar no Rose
+                    className="fill-white text-white"
                     size={20}
                   />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-4 italic">
-                "{testimonial.text}"
-              </p>
-              <p className="font-semibold text-foreground">
-                {testimonial.name}
-              </p>
+              {/* Texto Branco para contraste */}
+              <p className="text-white mb-4 italic">"{testimonial.text}"</p>
+              <p className="font-semibold text-white">{testimonial.name}</p>
             </Card>
           ))}
         </div>
