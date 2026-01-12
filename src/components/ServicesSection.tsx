@@ -3,16 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Users, Clock, Target, HeartHandshake } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import healthyFoodImage from "@/assets/im6.jpg";
-import image2 from "@/assets/im4.jpg";
-import image3 from "@/assets/im5.jpg";
+
+import imag from "@/assets/im5.jpg";
 
 const ServicesSection = () => {
   const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
@@ -130,28 +123,13 @@ const ServicesSection = () => {
           </div>
 
           <div>
-            <Carousel
-              plugins={[autoplay.current]}
-              className="max-w-sm md:max-w-md mx-auto rounded-2xl shadow-lg"
-              onMouseEnter={autoplay.current.stop}
-              onMouseLeave={autoplay.current.reset}
-            >
-              <CarouselContent>
-                {[healthyFoodImage, image2, image3].map((img, i) => (
-                  <CarouselItem key={i}>
-                    <div className="w-full h-64 md:h-80 overflow-hidden rounded-2xl">
-                      <img
-                        src={img}
-                        alt={`Imagem ${i + 1} da palestra`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+            <div className="w-full h-64 md:h-80 overflow-hidden rounded-2xl">
+              <img
+                src={imag}
+                alt={`Imagem  da palestra`}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
